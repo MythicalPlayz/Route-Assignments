@@ -1,0 +1,16 @@
+.cus-border {
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.animate {
+    transition: all 150ms ease-in-out;
+}
+
+.cus-border:hover {
+    background-color: var(--bs-success);
+}
+
+.cus-border:hover p, .cus-border:hover h2 {
+    color: white !important;
+}

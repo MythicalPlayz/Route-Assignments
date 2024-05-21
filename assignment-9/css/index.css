@@ -17,3 +17,11 @@ button {
 button:hover {
     background-color: var(--bs-success) !important;
 }
+
+.h-05 {
+    height: 5% !important;
+}
+
+.h-95 {
+    height: 95% !important;
+}

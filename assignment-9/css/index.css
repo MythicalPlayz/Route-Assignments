@@ -1,0 +1,19 @@
+.font-impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.font-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fs-xl {
+    font-size: 80px;
+}
+
+button {
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    background-color: var(--bs-success) !important;
+}

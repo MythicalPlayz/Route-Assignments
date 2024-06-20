@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/bookmark.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <div class="container py-1 px-5 d-flex flex-column vh-100 text-center">
+            <div class="row align-self-start h-05">
+                <a href=".." class="btn btn-primary d-flex justify-content-center align-items-center">Go Home</a>
+            </div>
+            <section class="d-flex flex-column align-items-center">
+                <h1 class="title my-5">Bookmarker</h1>
+                <div class="info d-flex flex-column p-3 bs-dotted w-100 my-5">
+                    <div class="desc d-flex justify-content-center align-items-center text-center mb-5">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <h3>Bookmark your favourite sites</h3>
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+                    <div class="text-start">
+                        <label for="name" class="fw-bolder my-1"><i class="fa-solid fa-book"></i> Site Name</label>
+                        <input type="text" class="form-control mb-1 first" id="name" />
+                        <label for="url" class="fw-bolder my-1"><i class="fa-solid fa-link"></i> Site URL</label>
+                        <input type="text" class="form-control mb-1 first" id="url" />
+                    </div>
+                    <button class="button w-auto mx-auto my-3 py-1 px-5 rounded border-0" id='submit'>Submit</button>
+                </div>
+                <table class="table bg-body w-100">
+                    <thead>
+                        <tr class="fw-bold">
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </section>
+    <div class="box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none" id="fail-screen">
+        <div class="box-conent bg-white p-4 rounded-2 shadow-lg" bis_skin_checked="1">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex" bis_skin_checked="1">
+                    <span class="rounded-circle me-2 bg-danger"></span>
+                    <span class="rounded-circle me-2 bg-warning"></span>
+                    <span class="rounded-circle me-2 bg-success"></span>
+                </div>
+                <button class="btn border-0" id="close">
+                    <i class="fa-solid fa-xmark fs-3"></i>
+                </button>
+            </header>
+            <p class="m-0 pb-2 fw-bolder">
+                Something is not valid, Please follow the rules below :
+            </p>
+            <ul class="rules list-unstyled m-0">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                    contain at least 3 characters
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                    valid one
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+body {
+    background-color: #f7ecde;
+}
+
+.title {
+    font-family: 'Pacifico';
+    position: relative;
+    color: #352e28;
+    font-size: 50px;
+}
+
+*::selection {
+    background-color: #fec260;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 150ms ease-in-out;
+}
+
+.title:hover::before {
+    height: 75%;
+}
+
+.bs-dotted {
+    border-style: dotted !important;
+    border-width: 5px 0px;
+    border-color: #352e28;
+}
+
+.desc{
+    gap: 10px;
+    font-size: 24px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+#submit {
+    background-color: #d1512d;
+    box-sizing: border-box;
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+
+#submit:hover {
+    background-color: #a03315;
+}
+
+#submit:active {
+    background-color: transparent;
+    border: #352e28 1px solid !important;
+    color: #352e28;
+}
+
+.visit {
+    background-color: #b5ac49;
+    color: #fff;
+}
+
+table {
+    vertical-align: middle !important;
+}
+
+.first:focus {
+    border-color: #fec260 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fec160ac !important;
+}
+
+.is-valid {
+    border-color: #0f0 !important;
+    ;
+}
+
+.is-valid:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #0f0a !important
+}
+
+.is-invalid {
+    border-color: #f00 !important;
+    ;
+}
+
+.is-invalid:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f00a !important
+}
+
+.circles span {
+    width: 25px;
+    height: 25px;
+}
+
+#fail-screen {
+    background-color: #000c;
+}

@@ -1,0 +1,89 @@
+:root {
+    --background: #1e202b;
+    --footer: #262936;
+    --th-l: #2d303d;
+    --th-d: #222530;
+    --td-l: #323544;
+    --td-d: #262936;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: white;
+}
+
+#nav {
+    background-color: var(--background) !important;
+}
+
+.fs-xs {
+    font-size: 10px !important;
+}
+
+section {
+    background-image: url(/assignment-12/img/banner.png);
+    background-position: top;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: var(--footer);
+}
+
+form, #location-parent {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+input:focus {
+    outline: 0;
+    border: 0;
+}
+
+#social i {
+    background-color: var(--background);
+    border-radius: 2.5rem;
+    margin-inline: 5px;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms ease-in-out;
+}
+
+#social a {
+    text-decoration: none;
+}
+
+#social a:hover i {
+    color: white !important;
+    background-color: #009ad8;
+}
+
+.pri-table {
+    background-color: var(--td-l);
+}
+
+.sec-table {
+    background-color: var(--td-d);
+}
+
+.pri-head {
+    background-color: var(--th-l);
+}
+
+.sec-head {
+    background-color: var(--th-d);
+}
+
+.main-deg {
+    font-size: 100px;
+    font-weight: bolder;
+}

@@ -18,7 +18,7 @@ const regex = /[a-zA-Z]{3,}$/
 function assignWeather(resultObject){
     const location = resultObject.location;
     const city = location.name;
-    const date = new Date(location.localtime_epoch * 1000);
+    const date = new Date(resultObject.forecast.forecastday[0].date_epoch * 1000);
     const current = resultObject.current;
     const currentTemp = current.temp_c;
     const currentCondition = current.condition;

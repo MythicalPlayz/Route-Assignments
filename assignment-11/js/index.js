@@ -95,7 +95,7 @@ function signup(){
     statusElement.classList.remove('d-none');
     statusElement.classList.remove('text-danger');
     statusElement.classList.add('text-success');
-    location.href = 'index.html';
+    setTimeout(function() {location.href = 'index.html';}, 1500);
 }
 
 function logout(){

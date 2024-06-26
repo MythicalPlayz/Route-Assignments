@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="bg-main">
+    <section>
+        <div class="container w-50 d-flex flex-column justify-content-center align-items-center bg-main my-5 p-5">
+            <h1 class="color-main text-primary">Smart Login System</h1>
+            <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control bg-transparent text-white my-2" />
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control bg-transparent text-white my-2" />
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control bg-transparent text-white my-2" />
+            <p class="text-danger mt-2 d-none" id="status">Status</p>
+            <button class="form-control bg-transparent text-white my-2 color-main" onclick="signup()">Sign Up</button>
+            <p class="text-white">have an account? <a href="index.html" class="text-decoration-none text-white">Log In</a></p>
+        </div>
+    </section>
+</body>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</html>

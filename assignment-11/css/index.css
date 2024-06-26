@@ -1,0 +1,68 @@
+:root {
+    --color: #24353f;
+    --font: "Titillium Web", sans-serif;
+    --tcolor: #17a2b8;
+}
+
+* {
+    font-family: var(--font);
+}
+
+.bg-main {
+    background-color: var(--color);
+}
+
+.color-main {
+    color: var(--tcolor) !important;
+}
+
+input {
+    border: 1px solid ;
+}
+
+input::placeholder {
+    color: #ced4da !important;
+}
+
+input:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: var(--bs-border-width) solid var(--tcolor) !important;
+}
+
+section>div {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+button {
+    border: var(--bs-border-width) solid var(--tcolor) !important;
+    transition: all 250ms ease-in-out !important;
+}
+
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+button:hover {
+    background-color: var(--tcolor) !important;
+    color: #fff !important;
+}
+
+.d-flex-2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+nav {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+#logout:hover {
+    background-color: var(--bs-warning) !important;
+}

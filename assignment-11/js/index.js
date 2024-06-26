@@ -1,4 +1,5 @@
 const emailRegex = /^\w+@\w+\.\w+$/;
+const userRegex = /^[a-zA-z]/
 
 const emailElement = document.getElementById('email');
 const nameElement = document.getElementById('name');
@@ -28,12 +29,22 @@ function login(){
     const email = emailElement.value;
     const pass = passElement.value;
 
-    if (isvalid(email,pass)) {
+    if (!pass || !email) {
+        statusElement.innerHTML = 'Missing Info';
+        statusElement.classList.remove('d-none');
+        return;
+    }
+    const status = isvalid(email,pass);
+    if (status === 2) {
         location.href = 'home.html';
         return;
     }
-
-    statusElement.innerHTML = 'Invalid Email/Password combination';
+    else if (status === 1){
+        statusElement.innerHTML = 'Invalid Password';
+    }
+    else {
+        statusElement.innerHTML = 'Invalid Email';
+    }
     statusElement.classList.remove('d-none');
 }
 
@@ -49,6 +60,12 @@ function signup(){
 
     if (!name || !pass || !email) {
         statusElement.innerHTML = 'Missing Info';
+        statusElement.classList.remove('d-none');
+        return;
+    }
+
+    if (userRegex.test(name)){
+        statusElement.innerHTML = 'Invalid Name';
         statusElement.classList.remove('d-none');
         return;
     }
@@ -78,6 +95,7 @@ function signup(){
     statusElement.classList.remove('d-none');
     statusElement.classList.remove('text-danger');
     statusElement.classList.add('text-success');
+    location.href = 'index.html';
 }
 
 function logout(){
@@ -95,13 +113,17 @@ function isemailunique(value) {
 }
 
 function isvalid(evalue, pvalue) {
+    let stat = 0;
     for (let user of users){
-        if (user.email === evalue && user.password === pvalue){
-            setkey('logged-user',JSON.stringify(user));
-            return true;
-        }
+        if (user.email === evalue) 
+            stat++;
+            if (user.password === pvalue){
+                setkey('logged-user',JSON.stringify(user));
+                stat++;
+            }
+            return stat;
     }
-    return false;
+    return stat;
 }
 
 if (userElement){

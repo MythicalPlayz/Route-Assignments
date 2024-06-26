@@ -66,3 +66,14 @@ nav {
 #logout:hover {
     background-color: var(--bs-warning) !important;
 }
+
+.w-d {
+    width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .w-d {
+        width: 85%;
+
+    }
+}

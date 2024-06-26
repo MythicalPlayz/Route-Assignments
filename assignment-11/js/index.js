@@ -64,7 +64,7 @@ function signup(){
         return;
     }
 
-    if (userRegex.test(name)){
+    if (!userRegex.test(name)){
         statusElement.innerHTML = 'Invalid Name';
         statusElement.classList.remove('d-none');
         return;

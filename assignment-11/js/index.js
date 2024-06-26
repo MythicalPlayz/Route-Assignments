@@ -115,13 +115,14 @@ function isemailunique(value) {
 function isvalid(evalue, pvalue) {
     let stat = 0;
     for (let user of users){
-        if (user.email === evalue) 
+        if (user.email === evalue){
             stat++;
             if (user.password === pvalue){
                 setkey('logged-user',JSON.stringify(user));
                 stat++;
             }
             return stat;
+        }
     }
     return stat;
 }

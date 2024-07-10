@@ -1,0 +1,136 @@
+:root {
+    --font-1: "Comfortaa", cursive;
+    --font-2: "Nerko One", cursive;
+    --color-1: #272b30;
+    --color-2: #32383e;
+    --color-3: #171d32;
+    --color-4: #3a497b;
+}
+
+* {
+    font-family: var(--font-2);
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+header img {
+    height: 30vh;
+}
+
+nav {
+    background-color: var(--color-4);
+    margin-top: -20px;
+}
+
+.alt-font {
+    font-family: var(--font-1);
+}
+
+#catagory p {
+    cursor: pointer;
+    ;
+}
+
+.nav-custom {
+    display: flex;
+    justify-content: end;
+}
+
+.bg-color-2 {
+    background-color: var(--color-2);
+}
+
+.fs-s {
+    font-size: 14px;
+}
+
+.fs-xs {
+    font-size: 8px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#loading {
+    background-color: #272b30db;
+}
+
+#gamedetails {
+    background-color: var(--color-1);
+}
+
+.game {
+    filter: grayscale(0.7);
+    transition: all 500ms ease-in-out;
+}
+
+.game:hover {
+    filter: none;
+    scale: 1.1;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.nav-item p:hover {
+    color: var(--bs-primary) !important;
+} 

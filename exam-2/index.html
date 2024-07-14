@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <aside>
-        <div class="content bg-main start-0 d-flex flex-column justify-content-between text-white p-4">
+    <aside class="vh-100">
+        <div class="content bg-main d-flex flex-column justify-content-between text-white p-4">
             <div class="links">
                 <ul class="list-unstyled overflow-hidden">
                     <li class="click py-2 position-relative" page="search">Search</li>
@@ -23,7 +23,7 @@
                     <li class="click py-2 position-relative" page="contact">Contact Us</li>
                 </ul>
             </div>
-            <div class="nav-footer d-flex flex-column">
+            <div class="nav-footer d-flex flex-column pb-5 pb-md-0">
                 <div class="d-flex justify-content-start">
                     <i class="fa-brands fa-facebook p-1 click"></i>
                     <i class="fa-brands fa-twitter p-1 click"></i>
@@ -32,12 +32,12 @@
                 <p class="m-0">Copyright Â© 2019 All Rights Reserved.</p>
             </div>
         </div>
-        <div class="side bg-white px-2 py-3 d-flex flex-column justify-content-between align-items-center h-100">
+        <div class="side bg-white px-2 py-3 d-flex flex-column justify-content-between align-items-center">
             <div class="icon-holder">
                 <img class="w-100" src="img/logo.png" alt=""/>
             </div>
             <i class="fa-solid fa-bars fa-2x click" id="menu"></i>
-            <div class="icons d-flex flex-column justify-content-center align-items-center">
+            <div class="icons d-flex flex-column justify-content-center align-items-center pb-5 pb-md-0">
                 <i class="fa-solid fa-globe p-1 click"></i>
                 <i class="fa-solid fa-share-alt p-1 click"></i>
             </div>
@@ -47,12 +47,12 @@
         <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
     </div>
     <section class="container w-100 text-white d-none" id="details">
-        <div class="row py-5 g-4"></div>
+        <div class="row py-5 g-4 ps-5 ps-md-0"></div>
     </section>
     <section class="container w-100" id="home">
-        <div class="row g-4 py-5"></div>
+        <div class="row g-4 py-5 ps-5 ps-md-0"></div>
     </section>
-    <section class="container w-100 d-none" id="search">
+    <section class="container w-100 d-none ps-5 ps-md-0" id="search">
         <div class="w-75 mx-auto">
             <div class="row g-4 py-4">
                 <div class="col-md-6">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="results w-100 py-5 position-relative min-vh-100">
+        <div class="results w-100 py-5 position-relative min-vh-100 ps-5 ps-md-0">
             <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-main d-flex justify-content-center align-items-center z-1 d-none" bis_skin_checked="1" id="inner-loading">
                 <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
             </div>
@@ -71,16 +71,16 @@
         </div>
     </section>
     <section class="container w-100 d-none" id="categories">
-        <div class="row g-4 py-5"></div>
+        <div class="row g-4 py-5 ps-5 ps-md-0"></div>
     </section>
     <section class="container w-100 d-none" id="area">
-        <div class="row g-4 py-5"></div>
+        <div class="row g-4 py-5 ps-5 ps-md-0"></div>
     </section>
     <section class="container w-100 d-none" id="ingredients">
-        <div class="row g-4 py-5 align-items-baseline"></div>
+        <div class="row g-4 py-5 ps-5 ps-md-0 align-items-baseline"></div>
     </section>
     <section class="container w-100 vh-100 d-flex flex-column justify-content-center align-items-center d-none" id="contact">
-        <form class="row w-75 g-4 py-5">
+        <form class="row w-75 g-4 py-5 ps-5 ps-md-0">
                 <div class="col-md-6">
                     <input type="name" class="form-control" id="name" placeholder="Enter your Name"/>
                     <div class="bg-danger-subtle rounded text-danger mt-1 p-3 d-flex justify-content-center align-items-center mb-3">

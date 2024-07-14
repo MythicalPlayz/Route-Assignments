@@ -213,7 +213,7 @@ async function getMenuHome(){
     let container = '';
     for (const meal of meals){
         container += 
-        `<div class="col-md-3">
+        `<div class="col-md-3 ps-5 ps-md-0">
                 <div class="image-holder position-relative click rounded overflow-hidden hover" onclick=getDetails(${meal.idMeal})>
                     <img class="w-100" src=${meal.strMealThumb} alt="" />
                     <div class="position-absolute item bg-white bg-opacity-75 food-hover w-100 h-100 d-flex align-items-center">
@@ -241,13 +241,13 @@ async function getDetails(id){
     const meal = data.meals[0];
 
     let container =
-    `<div class="col-md-4">
+    `<div class="col-md-4 ps-5 ps-md-0">
                 <div class="food-image">
                     <img src="${meal.strMealThumb}" alt="" class="w-100 rounded">
                 </div>
                 <h3>${meal.strMeal}</h3>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 ps-5 ps-md-0">
                 <h2>Instructions</h2>
                 <p>${meal.strInstructions}</p>
                 <h3><span class="fw-bold">Area : </span>${meal.strArea}</h3>
@@ -335,7 +335,7 @@ async function loadCategoriesPage(){
 
     for (const cat of categories){
         container += 
-        `<div class="col-md-3">
+        `<div class="col-md-3 ps-5 ps-md-0">
                 <div class="image-holder position-relative click rounded overflow-hidden hover click" onclick=showFoodFilter('c','${cat.strCategory}')>
                     <img class="w-100" src=${cat.strCategoryThumb} alt="" />
                     <div
@@ -391,7 +391,7 @@ async function loadIngredientsPage(){
 
     for (const ingredient of ingredients){
         container += 
-        `<div class="col-md-3 text-white click d-flex flex-column justify-content-center align-items-center click text-center px-2" onclick=showFoodFilter('i','${ingredient.strIngredient}')>
+        `<div class="col-md-3 text-white click d-flex flex-column justify-content-center align-items-center click text-center ps-5 ps-md-0 px-2" onclick=showFoodFilter('i','${ingredient.strIngredient}')>
                 <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                 <h3>${ingredient.strIngredient}</h3>
                 <p class="m-0">${(ingredient.strDescription) ? ingredient.strDescription.split(" ").slice(0,20).join(" ") : ''}</p>
@@ -420,7 +420,7 @@ async function showFoodFilter(filter,cat){
     let container = '';
     for (const meal of meals){
         container += 
-        `<div class="col-md-3">
+        `<div class="col-md-3 ps-5 ps-md-0">
                 <div class="image-holder position-relative click rounded overflow-hidden hover" onclick=getDetails(${meal.idMeal})>
                     <img class="w-100" src=${meal.strMealThumb} alt="" />
                     <div class="position-absolute item bg-white bg-opacity-75 food-hover w-100 h-100 d-flex align-items-center">

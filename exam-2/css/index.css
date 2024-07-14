@@ -1,0 +1,41 @@
+.click {
+    cursor: pointer;
+}
+
+.no-click {
+    cursor: default !important;
+}
+
+.food-hover {
+    transition: all 500ms ease-in-out;
+    bottom: -100%;
+}
+
+.hover:hover .food-hover {
+    bottom: 0%;
+}
+
+body, .bg-main {
+    background-color: #0d0d0d;
+}
+
+#search input::placeholder {
+    color: #6c757d;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 9;
+}
+
+.side {
+    max-width: 70px;
+}
+
+.content {
+    max-width: 260px;
+}

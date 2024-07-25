@@ -1,0 +1,101 @@
+.click {
+    cursor: pointer;
+}
+
+.no-click {
+    cursor: default !important;
+}
+
+.bg-main {
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+
+#search input::placeholder {
+    color: #6c757d;
+}
+
+#title {
+    background-image: url('../img/events-heavenly-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+
+#title h2 {
+    font-size: 64px;
+}
+
+#singers>div>div {
+    background-color: #e68285;
+}
+#singers .info {
+    background-color: #cccccc;
+}
+
+#event {
+    background-image: url('../img/invitation-2508607__340.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+}
+
+#event h2 {
+    box-sizing: border-box;
+}
+
+#contact {
+    color: #777;
+}
+
+#contact .alt-color {
+    color: #444;
+}
+
+.icon {
+    border: #777 1px solid;
+    transition: all 250ms ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-danger);
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    height: 200px;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+}
+
+aside {
+    width: 330px;
+    background-color: black;
+    min-height: 110vh;
+    left: 0px;
+    position: fixed;
+    padding-top: 70px
+}
+
+aside>h3 {
+    position: absolute;
+    right: -140px;
+    top: 330px;
+}
+
+aside h5,aside h4 {
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+aside h5:hover {
+    color: #3f080a !important;
+}

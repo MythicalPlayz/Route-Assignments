@@ -11,6 +11,10 @@
     background-color: var(--bs-success);
 }
 
+.blue:hover {
+    background-color: var(--bs-primary);
+}
+
 .cus-border:hover p, .cus-border:hover h2 {
     color: white !important;
 }
